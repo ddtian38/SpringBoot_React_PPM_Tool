@@ -9,9 +9,8 @@ export const createProject = (project, history) => async dispatch => {
         history.push("/dashboard");
 
     } catch (error) {
-        
         dispatch({
-            type: "GET_ERRORS",
+            type: GET_ERRORS,
             payload: error.response.data
         });
         
